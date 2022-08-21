@@ -4,22 +4,28 @@ import { Handlers, PageProps } from "$fresh/server.ts"
 import { tw } from "@twind"
 import { loadPost, Post } from "../../utils/posts.ts"
 import * as gfm from "https://deno.land/x/gfm@0.1.22/mod.ts"
+import { State } from "../../utils/state.ts"
 
-export const handler: Handlers<Post> = {
+interface Data extends State {
+    post: Post
+}
+
+export const handler: Handlers<Post, State> = {
     async GET(_req, ctx) {
         const { id } = ctx.params
         const post = await loadPost(id)
+
         if (!post) {
             return new Response("Post | not found", { status: 404 })
         }
-        return ctx.render(post)
+        return ctx.render({ ...ctx.state, post })
     }
 }
 
-export default function BlogPostPage(props: PageProps) {
-    const post = props.data
+export default function BlogPostPage(props: PageProps<Data>) {
+    const { post, locales } = props.data
     // @ts-ignore
-    const dateFormatter = new Intl.DateTimeFormat('en-GB', { dateStyle: 'full' })
+    const dateFormatter = new Intl.DateTimeFormat(locales, { dateStyle: 'full' })
     const html = gfm.render(post.content)
 
     return (
