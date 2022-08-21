@@ -13,7 +13,7 @@ export const handler: Handlers<Post[]> = {
 
 export default function Home(props: PageProps<Post[]>) {
     const posts = props.data
-    console.log(posts)
+
   return (
     <div class={tw`p-4 mx-auto max-w-screen-md`}>
         <h1 className={tw`text-5xl mt-12 font-bold`}>Flatcircle blog</h1>
@@ -26,11 +26,13 @@ export default function Home(props: PageProps<Post[]>) {
 
 const PostEntry = (props: { post: Post }) => {
     const { title, publishedAt, id, snippet } = props.post
+    // @ts-ignore
+    const dateFormatter = new Intl.DateTimeFormat('en-GB', { dateStyle: 'short' })
 
     return (
         <li class={tw`border-t`}>
             <a href={`/blog/${id}`} class={tw`flex py-2 gap-4 group`}>
-                <div>{publishedAt.toLocaleDateString()}</div>
+                <div>{dateFormatter.format(publishedAt)}</div>
                 <div>
                     <h2 class={tw`font-bold text-xl group-hover:text-underline`}>{title}</h2>
                     <p class={tw`text-gray-600`}>{snippet}</p>
