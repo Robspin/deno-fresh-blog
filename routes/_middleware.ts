@@ -7,7 +7,6 @@ export function handler(req: Request, ctx: MiddlewareHandlerContext<State>) {
     ctx.state.locales = []
 
     const cookies = getCookies(req.headers)
-    // console.log(cookies)
     if (cookies.locale) ctx.state.locales.push(cookies.locale)
 
     const locales = parse(req.headers.get("accept-language") || undefined)
