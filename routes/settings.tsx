@@ -5,6 +5,7 @@ import { setCookie } from "$std/http/cookie.ts"
 import { Handlers, PageProps } from "$fresh/server.ts"
 import { State } from "../utils/state.ts"
 import LocaleSelector from "../islands/LocaleSelector.tsx"
+import Container from "../components/container.tsx"
 
 
 export const handler: Handlers<State, State> = {
@@ -39,10 +40,10 @@ export default function SettingsPage(props: PageProps<State>) {
 
 
     return (
-    <div className={tw`p-4 mx-auto max-w-screen-md`}>
+    <Container>
         <h1 className={tw`text-5xl mt-12 font-bold`}>Settings</h1>
         <p class={tw`mt-12`}>Your current locale is <b>{locales[0]}</b></p>
         <LocaleSelector />
-    </div>
+    </Container>
     )
 }
