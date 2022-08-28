@@ -7,6 +7,7 @@ import * as $1 from "./routes/blog/[id].tsx";
 import * as $2 from "./routes/index.tsx";
 import * as $3 from "./routes/settings.tsx";
 import * as $$0 from "./islands/LocaleSelector.tsx";
+import * as $$1 from "./islands/darkModeSwitch.tsx";
 
 const manifest = {
   routes: {
@@ -17,6 +18,7 @@ const manifest = {
   },
   islands: {
     "./islands/LocaleSelector.tsx": $$0,
+    "./islands/darkModeSwitch.tsx": $$1,
   },
   baseUrl: import.meta.url,
 };

@@ -5,6 +5,7 @@ import { tw } from "@twind"
 import { loadPost, Post } from "../../utils/posts.ts"
 import * as gfm from "https://deno.land/x/gfm@0.1.22/mod.ts"
 import { State } from "../../utils/state.ts"
+import Container from "../../components/container.tsx"
 
 interface Data extends State {
     post: Post
@@ -29,11 +30,11 @@ export default function BlogPostPage(props: PageProps<Data>) {
     const html = gfm.render(post.content)
 
     return (
-        <div class={tw`p-4 mx-auto max-w-screen-md`}>
+        <Container>
             <p class={tw`text-gray-600 mt-12`}>{dateFormatter.format(post.publishedAt)}</p>
             <h1 class={tw`text-5xl mt-2 font-bold`}>{post.title}</h1>
             <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
             <div class={tw`mt-12` + ' markdown-body'} dangerouslySetInnerHTML={{ __html: html }} />
-        </div>
+        </Container>
     );
 }
