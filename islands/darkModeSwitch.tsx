@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
         }
     }
 
-    return <div class={tw`p-2 cursor-pointer ml-auto select-none hover:scale-125 transition-transform`} onClick={changeTheme}>🦕</div>
+    return <div class={tw`p-2 cursor-pointer ml-auto select-none hover:scale-[115%] transition-transform`} onClick={changeTheme}>🦕</div>
 }
 
 export default DarkModeSwitch

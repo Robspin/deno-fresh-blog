@@ -4,14 +4,15 @@ import { tw } from "@twind"
 import { Post } from "../utils/posts.ts"
 
 
-const PostEntry = (props: { post: Post }) => {
+const PostEntry = (props: { post: Post, type: 'blog' | 'list' }) => {
     const { title, publishedAt, id, snippet } = props.post
+    const { type } = props
     // @ts-ignore
     const dateFormatter = new Intl.DateTimeFormat('en-GB', { dateStyle: 'short' })
 
     return (
         <li class={tw`border-t`}>
-            <a href={`/blog/${id}`} class={tw`flex py-2 gap-4 group`}>
+            <a href={`/${type}/${id}`} class={tw`flex py-2 gap-4 group`}>
                 <div>{dateFormatter.format(publishedAt)}</div>
                 <div>
                     <h2 class={tw`font-bold text-xl group-hover:text-underline`}>{title}</h2>

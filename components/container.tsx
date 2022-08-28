@@ -2,7 +2,6 @@
 import { h } from 'preact'
 import { tw } from "@twind"
 import { Head as HtmlHead, asset } from '$fresh/runtime.ts'
-import { PageProps } from "$fresh/src/server/types.ts"
 import { ComponentChildren } from "https://esm.sh/v92/preact@10.10.6/src/index.d.ts"
 import DarkModeSwitch from "../islands/darkModeSwitch.tsx"
 
@@ -30,12 +29,14 @@ const Navigation = () => {
 const Container = ({ children }: { children: ComponentChildren }) => {
 
     return (
-            <div class={tw`dark theme-div`}>
+            <div class={tw`dark theme-div font-sans`}>
                 <Head />
-                <div class={tw`p-4 mx-auto max-w-screen-md dark:(bg-black text-white) min-h-screen`}>
-                <Navigation />
-                    <div class={tw`dark:(bg-black text-white)`}>
-                        {children}
+                <div class={tw`dark:(bg-gray-800 text-white) min-h-screen min-w-screen`}>
+                    <div class={tw`p-4 mx-auto max-w-screen-md`}>
+                    <Navigation />
+                        <div >
+                            {children}
+                        </div>
                     </div>
                 </div>
             </div>

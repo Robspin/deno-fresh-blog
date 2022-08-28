@@ -5,7 +5,7 @@ export interface Post {
     title: string
     publishedAt: Date
     snippet: string
-    content: string
+    content: any
 }
 
 export const loadPost = async (id: string): Promise<Post | null> => {
