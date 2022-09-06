@@ -4,12 +4,21 @@ import { tw } from "twind"
 
 
 const DarkModeSwitch = () => {
+    const setThemeCookie = (theme: string) => {
+        const date = new Date()
+        date.setTime(date.getTime()+(180*24*60*60*1000))
+        const expires = "; expires="+date.toGMTString()
+        document.cookie = "robspin-blog--theme="+ theme + expires+"; path=/"
+    }
+
     const changeTheme = () => {
         const div = document.querySelector('.theme-div') as Element
         if (div.classList.contains('dark')) {
             div.classList.remove('dark')
+            setThemeCookie('light')
         } else {
             div.classList.add('dark')
+            setThemeCookie('dark')
         }
     }
 

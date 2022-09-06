@@ -4,6 +4,8 @@ import { tw } from "@twind"
 import { Head as HtmlHead, asset } from '$fresh/runtime.ts'
 import { ComponentChildren } from "https://esm.sh/v92/preact@10.10.6/src/index.d.ts"
 import DarkModeSwitch from "../islands/darkModeSwitch.tsx"
+import { State } from "../utils/state.ts"
+
 
 const Head = () => {
     return (
@@ -26,18 +28,22 @@ const Navigation = () => {
     )
 }
 
-const Container = ({ children }: { children: ComponentChildren }) => {
+
+
+const Container = ({ children, theme }: { children: ComponentChildren, theme: string }) => {
 
     return (
-            <div class={tw`dark theme-div font-sans`}>
+            <div class={tw`${theme} theme-div font-sans`}>
                 <Head />
                 <div class={tw`dark:(bg-gray-800 text-white) min-h-screen min-w-screen`}>
                     <div class={tw`p-4 mx-auto max-w-screen-md`}>
                     <Navigation />
-                        <div >
+                        <main data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
                             {children}
-                        </div>
+                        </main>
                     </div>
+                <footer class={tw`mt-20`}>
+                </footer>
                 </div>
             </div>
         )

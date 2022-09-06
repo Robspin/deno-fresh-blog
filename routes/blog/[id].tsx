@@ -33,7 +33,7 @@ export default function BlogPostPage(props: PageProps<Data>) {
         <Container>
             <p class={tw`text-gray-600 mt-12`}>{dateFormatter.format(post.publishedAt)}</p>
             <h1 class={tw`text-5xl mt-2 font-bold`}>{post.title}</h1>
-            <style dangerouslySetInnerHTML={{ __html: gfm.CSS }} />
+            <style dangerouslySetInnerHTML={{ __html: `${gfm.CSS} .markdown-body { color: inherit; background: inherit; }` }} />
             <div class={tw`mt-12` + ' markdown-body'} dangerouslySetInnerHTML={{ __html: html }} />
         </Container>
     );
