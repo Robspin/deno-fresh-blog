@@ -1,22 +1,23 @@
-/** @jsx h */
-/** @jsxFrag Fragment */
-import { Fragment, h } from "preact";
-import { AppProps, Handlers } from "$fresh/server.ts"
-import Container from '../components/container.tsx'
-import { State } from "../utils/state.ts"
+import { AppProps } from "$fresh/server.ts"
+import { Head as HtmlHead } from "$fresh/src/runtime/head.ts"
 
-export const handler: Handlers<State, State> = {
-    GET(_req, ctx) {
-        console.log(ctx.state)
-        return ctx.render(ctx.state)
-    }
+const Head = () => {
+    return (
+        <HtmlHead>
+            <title>Robin's fresh blog</title>
+            <meta content="muh blog and top lists" name="description" />
+            <link rel="icon" href="/kaneda.png" />
+        </HtmlHead>
+    )
 }
 
 export default function App({ Component }:  AppProps) {
-
     return (
-            <Container theme="dark">
+        <div>
+        <Head />
+            <body>
                 <Component />
-            </Container>
+            </body>
+        </div>
     );
 }

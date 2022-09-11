@@ -4,13 +4,63 @@
       "title": "Top 5 Anime shows of all time",
       "publishedAt": "2022-08-28T15:25:58.887Z",
       "snippet": "A collection of what I think are the best Anime shows",
-      "content": []
+      "content": [
+        {
+          "name": "Cowboy bebop",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Code geass",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Samurai shamploo",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Attack on titan",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Full metal alchemist",
+          "description": "",
+          "image": ""
+      }]
     },
     {
       "title": "Top 5 Movies of all time",
       "publishedAt": "2022-08-28T15:25:58.887Z",
       "snippet": "A collection of what I think are the best movies",
-      "content": []
+      "content": [
+        {
+          "name": "American gangster",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Training day",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Ex machina",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Limitless",
+          "description": "",
+          "image": ""
+        },
+        {
+          "name": "Django",
+          "description": "",
+          "image": ""
+        }]
     }
   ]
 }

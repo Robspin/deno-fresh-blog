@@ -9,7 +9,7 @@ export function handler(req: Request, ctx: MiddlewareHandlerContext<State>) {
 
     const cookies = getCookies(req.headers)
 
-    if (cookies['robspin-blog--theme']) ctx.state.theme = cookies['robspin-blog--theme']
+    if (cookies['robspin-blog--theme']) ctx.state.theme = cookies['robspin-blog--theme'] || 'dark'
     if (cookies.locale) ctx.state.locales.push(cookies.locale)
 
     const locales = parse(req.headers.get("accept-language") || undefined)

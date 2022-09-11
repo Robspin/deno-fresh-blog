@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from 'preact'
-import { tw } from "@twind"
 import { setCookie } from "$std/http/cookie.ts"
 import { Handlers, PageProps } from "$fresh/server.ts"
 import { State } from "../utils/state.ts"
@@ -36,13 +33,13 @@ export const handler: Handlers<State, State> = {
 }
 
 export default function SettingsPage(props: PageProps<State>) {
-    const { locales } = props.data
+    const { locales, theme } = props.data
 
 
     return (
-    <Container>
-        <h1 className={tw`text-5xl mt-12 font-bold`}>Settings</h1>
-        <p class={tw`mt-12`}>Your current locale is <b>{locales[0]}</b></p>
+    <Container theme={theme}>
+        <h1 className="text-5xl mt-12 font-bold">Settings</h1>
+        <p className="mt-12">Your current locale is <b>{locales[0]}</b></p>
         <LocaleSelector />
     </Container>
     )

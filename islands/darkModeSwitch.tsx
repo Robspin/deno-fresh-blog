@@ -1,13 +1,10 @@
-/** @jsx h */
-import { h } from "preact"
-import { tw } from "twind"
 
 
 const DarkModeSwitch = () => {
     const setThemeCookie = (theme: string) => {
         const date = new Date()
         date.setTime(date.getTime()+(180*24*60*60*1000))
-        const expires = "; expires="+date.toGMTString()
+        const expires = "; expires="+date.toUTCString()
         document.cookie = "robspin-blog--theme="+ theme + expires+"; path=/"
     }
 
@@ -22,7 +19,7 @@ const DarkModeSwitch = () => {
         }
     }
 
-    return <div class={tw`p-2 cursor-pointer ml-auto select-none hover:scale-[115%] transition-transform`} onClick={changeTheme}>🦕</div>
+    return <div className="p-2 cursor-pointer ml-auto select-none hover:scale-[115%] transition-transform" onClick={changeTheme}>🦕</div>
 }
 
 export default DarkModeSwitch

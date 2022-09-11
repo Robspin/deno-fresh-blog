@@ -1,7 +1,4 @@
-/** @jsx h */
-import { h } from "preact"
 import { Handlers, PageProps } from "$fresh/server.ts"
-import { tw } from "@twind"
 import { loadPost, Post } from "../../utils/posts.ts"
 import * as gfm from "https://deno.land/x/gfm@0.1.22/mod.ts"
 import { State } from "../../utils/state.ts"
@@ -24,17 +21,17 @@ export const handler: Handlers<Post, State> = {
 }
 
 export default function BlogPostPage(props: PageProps<Data>) {
-    const { post, locales } = props.data
+    const { post, locales, theme } = props.data
     // @ts-ignore
     const dateFormatter = new Intl.DateTimeFormat(locales, { dateStyle: 'full' })
     const html = gfm.render(post.content)
 
     return (
-        <Container>
-            <p class={tw`text-gray-600 mt-12`}>{dateFormatter.format(post.publishedAt)}</p>
-            <h1 class={tw`text-5xl mt-2 font-bold`}>{post.title}</h1>
+        <Container theme={theme}>
+            <p className="text-gray-600 mt-12">{dateFormatter.format(post.publishedAt)}</p>
+            <h1 className="text-5xl mt-2 font-bold">{post.title}</h1>
             <style dangerouslySetInnerHTML={{ __html: `${gfm.CSS} .markdown-body { color: inherit; background: inherit; }` }} />
-            <div class={tw`mt-12` + ' markdown-body'} dangerouslySetInnerHTML={{ __html: html }} />
+            <div className="mt-12 markdown-body" dangerouslySetInnerHTML={{ __html: html }} />
         </Container>
     );
 }
