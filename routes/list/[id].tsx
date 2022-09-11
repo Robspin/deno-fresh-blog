@@ -30,9 +30,9 @@ const ListPage = (props) => {
         <Container theme={theme}>
             <style dangerouslySetInnerHTML={{__html: clampStyles}}/>
             <h1 className="text-5xl mt-12 font-bold">{list.title}s</h1>
-            <div className="pt-16 border-b">
+            <div className="pt-16">
                 {list.content.map((l, i) => (
-                    <div className="py-8 border-b flex" key={i}>
+                    <div className={`py-8 flex ${i !== 0 && 'border-t'}`} key={i}>
                         <a href={`https://www.imdb.com/title/${l.link}`} target="_blank" className="min-w-[128px] grow shrink-0">
                             <img width="128" height="200" className="min-w-32 rounded overflow-hidden object-cover" src={asset(`${list.assetPrefix}/${l.name.replaceAll(' ', '-')}.jpg`)} />
                         </a>
