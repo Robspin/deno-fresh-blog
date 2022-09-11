@@ -2,7 +2,6 @@ import { Handlers, PageProps } from "$fresh/server.ts"
 import { loadPosts, Post } from "../utils/posts.ts"
 import { List, loadLists } from "../utils/lists.ts"
 import PostEntry from '../components/postEntry.tsx'
-import {State} from "../utils/state.ts"
 import Container from "../components/container.tsx"
 
 export const handler: Handlers<{ posts: Post[], lists: List[], theme: string }> = {

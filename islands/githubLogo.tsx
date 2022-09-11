@@ -7,6 +7,16 @@ const GithubLogo = ({ theme }: { theme: string }) => {
         themeSignal.value = theme
     }, [])
 
+    useEffect(() => {
+        const html = document.querySelector('html')
+        if (themeSignal.value === 'dark' && html) {
+            html.setAttribute('style', 'background: #1f2937')
+            console.log(html.style)
+        } else if (themeSignal.value === 'light' && html && html.style){
+            html.setAttribute('style', '')
+        }
+    }, [themeSignal.value])
+
     return (
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill={themeSignal.value === 'dark' ? 'white' : 'black'}>
             <title>github-circle</title>
