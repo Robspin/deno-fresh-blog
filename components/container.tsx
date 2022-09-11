@@ -22,12 +22,12 @@ const Container = ({ children, theme }: { children: ComponentChildren, theme: st
     return (
             <div className={`${theme} theme-div font-sans`}>
                 <div className="dark:(bg-gray-800 text-white) min-h-screen min-w-screen">
-                    <div className="p-4 mx-auto max-w-screen-md">
+                    <div className="p-4 mx-auto max-w-screen-md flex flex-col min-h-screen min-w-screen">
                     <Navigation />
                         <main data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
                             {children}
                         </main>
-                    <footer className="mt-20 py-10 flex justify-between">
+                    <footer className="mt-20 py-10 flex justify-between mt-auto">
                         <ul className="flex flex-col">
                             <li><a className="hover:underline" href="https://www.robinsteeman.com" target="_blank">Portfolio</a></li>
                             <li><a className="hover:underline" href="https://three.robinsteeman.com" target="_blank">ThreeJS modelviewer</a></li>

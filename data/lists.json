@@ -3,32 +3,37 @@
     {
       "title": "Top 5 Anime shows of all time",
       "publishedAt": "2022-08-28T15:25:58.887Z",
-      "snippet": "A collection of what I think are the best Anime shows",
+      "snippet": "My collection of the best Anime shows of all time",
       "content": [
         {
           "name": "Cowboy bebop",
-          "description": "",
-          "image": ""
+          "score": 8.9,
+          "link": "tt0213338",
+          "description": "Mankind has colonised the stars, yet humanity remains the same desperate and power-hungry species in 2071. A ragtag duo of spacefaring bounty-hunters, Spike Spiegel and Jet Black, struggle to make ends meet living amongst the stars; and things are about to get a hell of a lot more complicated when they adopt the super-dog Ein, persuade the seductive femme-fatale known as Faye Valentine, and the teenage-hacker Edward. These five figures are about to come across things crazier than the crew of the Bebop itself."
         },
         {
           "name": "Code geass",
-          "description": "",
-          "image": ""
+          "score": 8.7,
+          "link": "tt0994314",
+          "description": "The Empire of Britannia has invaded Japan using giant robot weapons called Knightmare Frames. Japan is now referred to as Area 11, and its people the 11's. A Britannian who was living in Japan at the time, Lelouch, vowed to his Japanese friend Suzaku that he'd destroy Britannia. Years later, Lelouch is in high school, but regularly skips out of school to go play chess and gamble on himself. One day, he stumbles on terrorists 11's who've stolen a military secret and is caught by a member of the Britannian task force sent after them, who is Suzaku. As the rest of the squad arrives, Suzaku is shot for disobeying orders, while the military secret, a young immortal witch, gives Lelouch the power of Geass, which makes anyone obey any order. While Suzaku is secretly made the pilot of Britannia's brand new prototype Knightmare, Lancelot, Lelouch becomes the masked Zero to lead the rebellion to destroy Britannia once and for all."
         },
         {
-          "name": "Samurai shamploo",
-          "description": "",
-          "image": ""
+          "name": "Samurai champloo",
+          "score": 8.6,
+          "link": "tt0423731",
+          "description": "Fuu, a waitress who works in a teahouse, rescues two master swordsmen, Mugen and Jin, from their execution to help her find the \"samurai who smells of sunflowers.\""
         },
         {
           "name": "Attack on titan",
-          "description": "",
-          "image": ""
+          "score": 9.0,
+          "link": "tt2560140",
+          "description": "Humans are nearly exterminated by giant creatures called Titans. Titans are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source. A small percentage of humanity survived by walling themselves in a land protected by extremely high walls, even taller than the biggest of titans. Flash forward to the present, and mankind has not seen a titan in over 100 years. One day, 10 year old Eren and his foster sister Mikasa witness something horrific as the city walls are destroyed by a colossal titan that appears out of thin air. As the smaller titans flood the city, the two kids watch in horror as their mother is eaten alive. Eren vows that he will murder every single titan and take revenge for all of mankind."
         },
         {
           "name": "Full metal alchemist",
-          "description": "",
-          "image": ""
+          "score": 9.1,
+          "link": "tt1355642",
+          "description": "Two brothers lose their mother to an incurable disease. With the power of \"alchemy\", they use taboo knowledge to resurrect her. The process fails, and as a toll for using this type of alchemy, the older brother, Edward Elric loses his left leg while the younger brother, Alphonse Elric loses his entire body. To save his brother, Edward sacrifices his right arm and is able to affix his brother's soul to a suit of armor. With the help of a family friend, Edward receives metal limbs - \"automail\" - to replace his lost ones. With that, Edward vows to search for the Philosopher's Stone to return the brothers to their original bodies, even if it means becoming a \"State Alchemist\", one who uses his/her alchemy for the military."
       }]
     },
     {
