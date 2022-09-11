@@ -1,8 +1,11 @@
 import { themeSignal } from "../utils/themeSignal.ts"
+import { useEffect } from "preact/hooks"
 
 
 const GithubLogo = ({ theme }: { theme: string }) => {
-    themeSignal.value = theme
+    useEffect(() => {
+        themeSignal.value = theme
+    }, [])
 
     return (
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill={themeSignal.value === 'dark' ? 'white' : 'black'}>
