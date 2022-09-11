@@ -2,8 +2,9 @@
   "lists": [
     {
       "title": "Top 5 Anime shows of all time",
-      "publishedAt": "2022-08-28T15:25:58.887Z",
+      "publishedAt": "2022-09-11T15:25:58.887Z",
       "snippet": "My collection of the best Anime shows of all time",
+      "assetPrefix": "/anime",
       "content": [
         {
           "name": "Cowboy bebop",
@@ -38,33 +39,39 @@
     },
     {
       "title": "Top 5 Movies of all time",
-      "publishedAt": "2022-08-28T15:25:58.887Z",
+      "publishedAt": "2022-09-11T15:25:58.887Z",
       "snippet": "A collection of what I think are the best movies",
+      "assetPrefix": "/movies",
       "content": [
         {
           "name": "American gangster",
-          "description": "",
-          "image": ""
+          "score": 7.8,
+          "link": "tt0765429",
+          "description": "Following the death of his employer and mentor, Bumpy Johnson, Frank Lucas establishes himself as the number one importer of heroin in the Harlem district of Manhattan. He does so by buying heroin directly from the source in South East Asia and he comes up with a unique way of importing the drugs into the United States. As a result, his product is superior to what is currently available on the street and his prices are lower. His alliance with the New York Mafia ensures his position. It is also the story of a dedicated and honest policeman, Richie Roberts, who heads up a joint narcotics task force with the Federal government. Based on a true story."
         },
         {
-          "name": "Training day",
-          "description": "",
-          "image": ""
+          "name": "Casablanca",
+          "score": 8.5,
+          "link": "tt0034583",
+          "description": "The story of Rick Blaine, a cynical world-weary ex-patriate who runs a nightclub in Casablanca, Morocco during the early stages of WWII. Despite the pressure he constantly receives from the local authorities, Rick's cafe has become a kind of haven for refugees seeking to obtain illicit letters that will help them escape to America. But when Ilsa, a former lover of Rick's, and her husband, show up to his cafe one day, Rick faces a tough challenge which will bring up unforeseen complications, heartbreak and ultimately an excruciating decision to make."
         },
         {
-          "name": "Ex machina",
-          "description": "",
-          "image": ""
+          "name": "Fight club",
+          "score": 8.8,
+          "link": "tt0137523",
+          "description": "A nameless first person narrator (Edward Norton) attends support groups in attempt to subdue his emotional state and relieve his insomniac state. When he meets Marla (Helena Bonham Carter), another fake attendee of support groups, his life seems to become a little more bearable. However when he associates himself with Tyler (Brad Pitt) he is dragged into an underground fight club and soap making scheme. Together the two men spiral out of control and engage in competitive rivalry for love and power."
         },
         {
-          "name": "Limitless",
-          "description": "",
-          "image": ""
+          "name": "Chinatown",
+          "score": 8.2,
+          "link": "tt0071315",
+          "description": "In 1937 Los Angeles, private investigator Jake 'J.J.' Gittes specializes in cheating-spouse cases. His current target is Hollis Mulwray, high-profile chief engineer for the Los Angeles Department of Water and Power, whose wife suspects him of infidelity. In following Mulwray, Gittes witnesses some usual business dealings, such as a public meeting for construction of a new dam to create additional water supply for Los Angeles, as fresh water is vital to the growing community during the chronic drought; Mulwray opposes the dam. Eventually Gittes sees Mulwray meeting with an unknown young woman who isn't his wife. Once news of the supposed tryst between Mulwray and this woman hits the media, additional information comes to light that makes Gittes believe that Mulwray is being framed for something and that he himself is being set up."
         },
         {
-          "name": "Django",
-          "description": "",
-          "image": ""
+          "name": "Django unchained",
+          "score": 8.4,
+          "link": "tt1853728",
+          "description": "In 1858, a bounty-hunter named King Schultz seeks out a slave named Django and buys him because he needs him to find some men he is looking for. After finding them, Django wants to find his wife, Broomhilda, who along with him were sold separately by his former owner for trying to escape. Schultz offers to help him if he chooses to stay with him and be his partner. Eventually they learn that she was sold to a plantation in Mississippi. Knowing they can't just go in and say they want her, they come up with a plan so that the owner will welcome them into his home and they can find a way."
         }]
     }
   ]

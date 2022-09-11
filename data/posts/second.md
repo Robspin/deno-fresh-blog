@@ -1,11 +1,9 @@
 ---
-title: Second post
-published_at: 2022-08-22T03:41:53.444Z
-snippet: This is the second post.
+title: WIP
+published_at: 2022-09-11T03:41:53.444Z
+snippet: Coming soon...
 ---
 
 # Subtitle
 
-| Table | Column |
-| ----- | ------ |
-| asda  | xd     |
+More blogposts coming soon...
