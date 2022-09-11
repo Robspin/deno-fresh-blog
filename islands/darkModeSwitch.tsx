@@ -1,4 +1,4 @@
-
+import { themeSignal } from "../utils/themeSignal.ts"
 
 const DarkModeSwitch = () => {
     const setThemeCookie = (theme: string) => {
@@ -13,9 +13,11 @@ const DarkModeSwitch = () => {
         if (div.classList.contains('dark')) {
             div.classList.remove('dark')
             setThemeCookie('light')
+            themeSignal.value = 'light'
         } else {
             div.classList.add('dark')
             setThemeCookie('dark')
+            themeSignal.value = 'dark'
         }
     }
 

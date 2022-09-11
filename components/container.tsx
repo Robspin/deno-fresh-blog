@@ -1,6 +1,7 @@
 import { asset } from '$fresh/runtime.ts'
 import { ComponentChildren } from "https://esm.sh/v92/preact@10.10.6/src/index.d.ts"
 import DarkModeSwitch from "../islands/darkModeSwitch.tsx"
+import GithubLogo from "../islands/githubLogo.tsx"
 
 
 const Navigation = () => {
@@ -28,13 +29,25 @@ const Container = ({ children, theme }: { children: ComponentChildren, theme: st
                         </main>
                     <footer className="mt-20 py-10 flex justify-between">
                         <ul className="flex flex-col">
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">ThreeJS modelviewer</a></li>
+                            <li><a className="hover:underline" href="https://www.robinsteeman.com" target="_blank">Portfolio</a></li>
+                            <li><a className="hover:underline" href="https://three.robinsteeman.com" target="_blank">ThreeJS modelviewer</a></li>
                         </ul>
-                        <a href="https://fresh.deno.dev" target="_blank" className="flex items-center">
-                            Built with
-                            <img className="ml-4" width="40" height="40" src={asset('/logo.svg')} alt="Made with Fresh" />
-                        </a>
+                        <ul className="flex flex-col">
+                            <li className="hover:underline">
+                                <a href="https://fresh.deno.dev" target="_blank" className="flex items-center">
+                                    Built with
+                                    <img className="ml-4" width="20" height="20" src={asset('/logo.svg')} alt="Made with Fresh" />
+                                </a>
+                            </li>
+                            <li className="ml-auto hover:underline">
+                                <a href="https://github.com/Robspin/deno-fresh-blog" target="_blank" className="flex items-center">
+                                    Source
+                                    <div className="ml-4">
+                                        <GithubLogo theme={theme} />
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
                     </footer>
                     </div>
                 </div>
