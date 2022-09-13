@@ -1,6 +1,6 @@
 # Personal blog and my top favorite lists
 
-[Live on deno deploy](https://flatcircle-blog.deno.dev/)
+[Live on deno deploy](https://blog.robinsteeman.com/)
 
 ### Usage
 
