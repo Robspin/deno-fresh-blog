@@ -5,7 +5,7 @@ const Head = () => {
     return (
         <HtmlHead>
             <title>Robin's fresh blog</title>
-            <meta content="muh blog and top lists" name="description" />
+            <meta content="Blog and top lists" name="description" />
             <link rel="icon" href="/kaneda.png" />
         </HtmlHead>
     )
