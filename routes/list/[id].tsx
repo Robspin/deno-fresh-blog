@@ -41,7 +41,7 @@ const ListPage = (props) => {
                                 <h3 className="text-xl">{i + 1}. <span className="font-bold tracking-wide">{l.name}</span></h3>
                                 <p>IMDB: <span className="font-bold">{l.score}</span></p>
                             </div>
-                            <p id={`description${i}`} className="flex text-secondary mt-2 mx-2 robspin-line-clamp text-gray-400">{l.description}</p>
+                            <p id={`description${i}`} className="flex mt-2 mx-2 robspin-line-clamp text-gray-400">{l.description}</p>
                             <ReadMoreButton i={i} />
                         </div>
                     </div>

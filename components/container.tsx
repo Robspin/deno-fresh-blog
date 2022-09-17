@@ -27,7 +27,7 @@ const Container = ({ children, theme }: { children: ComponentChildren, theme: st
                         <main data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
                             {children}
                         </main>
-                    <footer className="mt-20 py-10 flex justify-between mt-auto">
+                    <footer className="mt-auto pb-10 pt-20 flex justify-between">
                         <ul className="flex flex-col">
                             <li><a className="hover:underline" href="https://www.robinsteeman.com" target="_blank">Portfolio</a></li>
                             <li><a className="hover:underline" href="https://three.robinsteeman.com" target="_blank">ThreeJS modelviewer</a></li>
@@ -36,13 +36,13 @@ const Container = ({ children, theme }: { children: ComponentChildren, theme: st
                             <li className="hover:underline">
                                 <a href="https://fresh.deno.dev" target="_blank" className="flex items-center">
                                     Built with
-                                    <img className="ml-4" width="20" height="20" src={asset('/logo.svg')} alt="Made with Fresh" />
+                                    <img className="ml-2" width="20" height="20" src={asset('/logo.svg')} alt="Made with Fresh" />
                                 </a>
                             </li>
                             <li className="ml-auto hover:underline">
                                 <a href="https://github.com/Robspin/deno-fresh-blog" target="_blank" className="flex items-center">
                                     Source
-                                    <div className="ml-4">
+                                    <div className="ml-2">
                                         <GithubLogo theme={theme} />
                                     </div>
                                 </a>
