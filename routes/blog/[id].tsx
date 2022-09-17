@@ -28,7 +28,7 @@ export default function BlogPostPage(props: PageProps<Data>) {
 
     return (
         <Container theme={theme}>
-            <p className="text-gray-600 mt-12">{dateFormatter.format(post.publishedAt)}</p>
+            <p className="text-gray-400 mt-12">{dateFormatter.format(post.publishedAt)}</p>
             <h1 className="text-5xl mt-2 font-bold">{post.title}</h1>
             <style dangerouslySetInnerHTML={{ __html: `${gfm.CSS} .markdown-body { color: inherit; background: inherit; }` }} />
             <div className="mt-12 markdown-body" dangerouslySetInnerHTML={{ __html: html }} />
