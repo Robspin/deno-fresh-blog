@@ -49,7 +49,7 @@ Whether it's writing a backend in Deno or Node, doing machine learning with Tens
 
 But could it do something like create 3d worlds for a metaverse? It sure can! Meet [ThreeJS](https://threejs.org/), another great open source addition to the Javascript universe.
 It uses WebGL to render 3d in the browser.
-People are already building games, gorgous websites and NFT art galleries with ThreeJS.
+People are already building games, gorgeous websites and NFT art galleries with ThreeJS.
 
 You can check out a simple ThreeJS model rendering project I built [here](https://three.robinsteeman.com).
 
