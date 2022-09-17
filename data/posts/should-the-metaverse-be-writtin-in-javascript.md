@@ -54,7 +54,7 @@ People are already building games, gorgous websites and NFT art galleries with T
 You can check out a simple ThreeJS model rendering project I built [here](https://three.robinsteeman.com).
 
 Who knows what the future will bring. Perhaps we will in fact live in 20 by 30 storage units, unhappy in the real world and finding relief in the metaverse.
-One thing I do know, is I would rather hang out in a decentralized metaverse built by a community of Javascript developers then Mark Zuckerbergs Meta.
+One thing I do know, I would rather hang out in a decentralized metaverse built by a community of Javascript developers then Mark Zuckerbergs Meta.
 
 Lets end with another great Snow Crash excerpt.
 
