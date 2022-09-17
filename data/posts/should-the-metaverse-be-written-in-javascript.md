@@ -58,6 +58,8 @@ One thing I do know, I would rather hang out in a decentralized metaverse built 
 
 Lets end with another great Snow Crash excerpt.
 
+&nbsp;
+
 >"See the world is full of things more powerfull than us.
 >But if you know how to catch a ride, you can go places."
 
