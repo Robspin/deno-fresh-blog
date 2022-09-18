@@ -19,7 +19,7 @@ export default function Home(props: PageProps<{ posts: Post[], lists: List[], th
         <Container theme={theme}>
             <h1 className="text-5xl mt-12 font-bold font-sora tracking-wide">Blog</h1>
             <ul className="mt-8">
-                {posts.map((post) => <PostEntry post={post} type="blog" />)}
+                {posts.map((post) => <PostEntry post={post} type="post" />)}
             </ul>
             <h1 className="text-5xl mt-12 font-bold font-sora tracking-wide">Top lists</h1>
             <ul className="mt-8">

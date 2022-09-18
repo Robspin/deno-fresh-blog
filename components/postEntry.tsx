@@ -1,7 +1,7 @@
 import { Post } from "../utils/posts.ts"
 
 
-const PostEntry = (props: { post: Post, type: 'blog' | 'list' }) => {
+const PostEntry = (props: { post: Post, type: 'post' | 'list' }) => {
     const { title, publishedAt, id, snippet } = props.post
     const { type } = props
     // @ts-ignore

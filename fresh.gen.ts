@@ -5,9 +5,9 @@
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/_app.tsx";
 import * as $1 from "./routes/_middleware.ts";
-import * as $2 from "./routes/blog/[id].tsx";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/list/[id].tsx";
+import * as $2 from "./routes/index.tsx";
+import * as $3 from "./routes/list/[id].tsx";
+import * as $4 from "./routes/post/[id].tsx";
 import * as $5 from "./routes/settings.tsx";
 import * as $$0 from "./islands/LocaleSelector.tsx";
 import * as $$1 from "./islands/darkModeSwitch.tsx";
@@ -18,9 +18,9 @@ const manifest = {
   routes: {
     "./routes/_app.tsx": $0,
     "./routes/_middleware.ts": $1,
-    "./routes/blog/[id].tsx": $2,
-    "./routes/index.tsx": $3,
-    "./routes/list/[id].tsx": $4,
+    "./routes/index.tsx": $2,
+    "./routes/list/[id].tsx": $3,
+    "./routes/post/[id].tsx": $4,
     "./routes/settings.tsx": $5,
   },
   islands: {

@@ -28,24 +28,24 @@ Hiro, Snow Crash's protagonist, is a hacker who has built parts of the metaverse
 &nbsp;
 
 The metaverse has since evolved from just being inside a sci-fi novel.
-Right now there are many companies racing for metaverse dominance. Microsoft, Meta, Apple and Google are all trying to suck up good developers to create their idea of what metaverse experience should be (and is most profitable).
+Right now there are many companies racing for metaverse dominance. Microsoft, Meta, Apple and Google are all trying to suck up good developers and creating their versions of the metaverse.
 
 &nbsp;
 
 # A peoples metaverse
-Some (including myself) would argue that the best experience would have to come from an open source decentralized metaverse.
+However some people (including myself), would argue that the best experience would have to come from an open source decentralized metaverse.
 One open for extension by anyone. Chaotic, but honest.
 
-Neil Stephenson himself also wants an open decentralized metaverse.
-In fact he recently anounced [Lamina1](https://www.lamina1.com/), a decentralized layer 1 solution for building an open metaverse on the blockchain. Providing a base for developers to build upon.
+Neil Stephenson himself is also a supporter of an open and decentralized metaverse.
+In fact he recently anounced [Lamina1](https://www.lamina1.com/), a decentralized layer 1 solution for building an open metaverse on top of the blockchain. Providing a base for developers to build upon.
 
 &nbsp;
 
 # Everything Javascript
 Now, why would Javascript be a good candidate of building on the metaverse.
 Well for starters [Javascript is the most commonly used programming language](https://survey.stackoverflow.co/2022/#section-most-popular-technologies-programming-scripting-and-markup-languages).
-Originally created for the web, but can nowadays be used for just about everything.
-Whether it's writing a backend in Deno or Node, doing machine learning with TensorFlow.js or building a mobile application in React Native.
+Originally created for the web, but nowadays used for just about everything.
+Whether it's writing a backend in Deno or Node, doing machine learning with TensorFlow.js or building mobile applications in React Native.
 
 But could it do something like create 3d worlds for a metaverse? It sure can! Meet [ThreeJS](https://threejs.org/), another great open source addition to the Javascript universe.
 It uses WebGL to render 3d in the browser.
@@ -56,7 +56,7 @@ You can check out a simple ThreeJS model rendering project I built [here](https:
 Who knows what the future will bring. Perhaps we will in fact live in 20 by 30 storage units, unhappy in the real world and finding relief in the metaverse.
 One thing I do know, I would rather hang out in a decentralized metaverse built by a community of Javascript developers then Mark Zuckerbergs Meta.
 
-Lets end with another great Snow Crash excerpt.
+Let's end with another great Snow Crash excerpt.
 
 &nbsp;
 
