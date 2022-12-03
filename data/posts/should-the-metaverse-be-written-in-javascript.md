@@ -4,8 +4,6 @@ published_at: 2022-09-17T03:41:53.444Z
 snippet: See the world is full of things more powerful than us. But if you know how to catch a ride, you can go places
 ---
 
-&nbsp;
-
 
 >“In the lingo, this imaginary place is known as the Metaverse. Hiro spends a lot of time in the Metaverse. It beats the shit out of the U-Stor-It.”
 
