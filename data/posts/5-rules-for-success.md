@@ -13,8 +13,7 @@ snippet: My formula of being successful in life
 
 # 1. Don't put all eggs in one basket
 
-Risk management is everything. Having grown up in a modest household, I became comparatively rich in my mid-twenties only to lose that wealth within a few years after; I have learned this the hard way.
-Spreading your risk is vital to avoiding ruin. Whether this means spreading your investments or having an exit strategy when it comes to your career, this is core to survival.
+Risk management is everything. I learned this the hard way. Having grown up in a modest household, I became comparatively rich in my mid-twenties only to lose that wealth a few years after. Spreading your risk is vital to avoid ruin. Whether this means spreading your investments or having an exit strategy when it comes to your career, this is core to survival.
 
 &nbsp;
 
