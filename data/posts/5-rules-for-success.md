@@ -1,7 +1,7 @@
 ---
 title: My 5 rules for success
 published_at: 2022-12-03T03:41:53.444Z
-snippet: My formula of being successful in life
+snippet: My formula for becoming successful in life
 ---
 
 
