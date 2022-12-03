@@ -5,7 +5,7 @@ const DarkModeSwitch = () => {
         const date = new Date()
         date.setTime(date.getTime()+(180*24*60*60*1000))
         const expires = "; expires="+date.toUTCString()
-        document.cookie = "robspin-post--theme="+ theme + expires+"; path=/"
+        document.cookie = "blog.robinsteeman--theme="+ theme + expires+"; path=/"
     }
 
     const changeTheme = () => {

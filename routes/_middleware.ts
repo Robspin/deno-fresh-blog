@@ -9,7 +9,7 @@ export function handler(req: Request, ctx: MiddlewareHandlerContext<State>) {
     ctx.state.theme = 'dark'
 
     const cookies = getCookies(req.headers)
-    const themeCookie = cookies['robspin-blog--theme']
+    const themeCookie = cookies['blog.robinsteeman--theme']
     if (themeCookie) {
         ctx.state.theme = themeCookie
         themeSignal.value = themeCookie

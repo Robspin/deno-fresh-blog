@@ -1,7 +1,7 @@
 ---
 title: Should the metaverse be written in Javascript?
 published_at: 2022-09-17T03:41:53.444Z
-snippet: See the world is full of things more powerfull than us. But if you know how to catch a ride, you can go places.
+snippet: See the world is full of things more powerful than us. But if you know how to catch a ride, you can go places
 ---
 
 &nbsp;
