@@ -1,9 +1,9 @@
 {
   "lists": [
     {
-      "title": "Top 5 Anime shows of all time",
+      "title": "Top 5 Anime shows",
       "publishedAt": "2022-09-11T15:25:58.887Z",
-      "snippet": "My collection of the best Anime shows of all time",
+      "snippet": "A list of anime shows that left an impression on me",
       "assetPrefix": "/anime",
       "content": [
         {
@@ -40,7 +40,7 @@
     {
       "title": "Top 5 Movies of all time",
       "publishedAt": "2022-09-11T15:25:58.887Z",
-      "snippet": "A collection of what I think are the best movies",
+      "snippet": "These are some of my favorite movies",
       "assetPrefix": "/movies",
       "content": [
         {

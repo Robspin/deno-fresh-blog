@@ -1,10 +1,8 @@
 ---
-title: 5 Rules for success
+title: My 5 rules for success
 published_at: 2022-12-03T03:41:53.444Z
-snippet: My formula of being successful in business, investing and life
+snippet: My formula of being successful in life
 ---
-
-&nbsp;
 
 
 >“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.”
