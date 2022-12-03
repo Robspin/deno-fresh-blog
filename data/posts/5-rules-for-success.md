@@ -7,7 +7,7 @@ snippet: My formula of being successful in business, investing and life
 &nbsp;
 
 
->“"Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.””
+>“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.”
 
 <sup>~ Sun Tzu, The art of war</sup>
 
