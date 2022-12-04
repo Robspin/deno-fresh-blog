@@ -7,14 +7,12 @@ const ReadMoreButton = ({ i }: { i: number }) => {
         const p = document.getElementById(`description${i}`)
         const btn = document.getElementById(`readMore${i}`)
         if (!p || !btn) return
-        console.log(p.innerText.length < 190)
-        if (p.innerText.length > 190) btn.classList.remove('hidden')
+        if (p.offsetHeight !== p.scrollHeight) btn.classList.remove('hidden')
     }, [])
 
     const readMore = () => {
         const p = document.getElementById(`description${i}`)
         if (!p) return
-        console.log(p.innerText.length)
         p.classList.toggle('robspin-line-clamp')
         setExpanded(prev => !prev)
     }

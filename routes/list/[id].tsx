@@ -29,7 +29,7 @@ const ListPage = (props) => {
     return (
         <Container theme={theme}>
             <style dangerouslySetInnerHTML={{__html: clampStyles}}/>
-            <h1 className="text-5xl mt-12 font-bold">{list.title}s</h1>
+            <h1 className="text-5xl mt-12 font-bold">{list.title}</h1>
             <div className="pt-16">
                 {list.content.map((l, i) => (
                     <div className={`py-8 flex ${i !== 0 && 'border-t'}`} key={i}>

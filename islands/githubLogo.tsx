@@ -11,7 +11,6 @@ const GithubLogo = ({ theme }: { theme: string }) => {
         const html = document.querySelector('html')
         if (themeSignal.value === 'dark' && html) {
             html.setAttribute('style', 'background: #1f2937')
-            console.log(html.style)
         } else if (themeSignal.value === 'light' && html && html.style){
             html.setAttribute('style', '')
         }
