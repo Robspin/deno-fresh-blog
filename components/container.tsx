@@ -4,12 +4,18 @@ import DarkModeSwitch from "../islands/darkModeSwitch.tsx"
 import GithubLogo from "../islands/githubLogo.tsx"
 
 
-const Navigation = () => {
+const Navigation = ({ views }: { views: number }) => {
     return (
     <div className="h-20 flex items-center">
         <a href="/" >
             <img src={asset('/kaneda.png')} className="rounded-full h-14" />
         </a>
+        <h2 className="ml-4 mr-2 text-xl font-bold">
+            Robin's fresh blog
+        </h2>
+        <span className="mr-4 text-gray-400 ml-auto text-sm">
+            {views && `visited ${views} times`}
+        </span>
         <DarkModeSwitch />
     </div>
     )
@@ -17,13 +23,13 @@ const Navigation = () => {
 
 
 
-const Container = ({ children, theme }: { children: ComponentChildren, theme: string }) => {
+const Container = ({ children, theme, views }: { children: ComponentChildren, theme: string, views: number }) => {
 
     return (
             <div className={`${theme} theme-div font-sans`}>
                 <div className="dark:(bg-gray-800 text-white) min-h-screen min-w-screen">
                     <div className="p-4 mx-auto max-w-screen-md flex flex-col min-h-screen min-w-screen">
-                    <Navigation />
+                    <Navigation views={views} />
                         <main data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
                             {children}
                         </main>
