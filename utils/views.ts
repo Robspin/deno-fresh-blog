@@ -8,7 +8,7 @@ export const updateAndGetViews = async (): Promise<number> => {
         const data = await res.json()
         views = data.data.views
     } catch (e) {
-        throw e
+        console.log(e)
     }
     return views
 }
