@@ -1,23 +1,27 @@
-FROM denoland/deno
+#FROM denoland/deno
+#
+#WORKDIR /app
+#
+#COPY . .
+#RUN deno cache main.ts --import-map=import_map.json
+#
+#EXPOSE 8000
+#
+#CMD ["task", "production"]
+
+
+FROM lukechannings/deno:1.31.1
+
+ARG GIT_REVISION
+ENV DENO_DEPLOYMENT_ID=${GIT_REVISION}
 
 WORKDIR /app
 
 COPY . .
-RUN deno cache main.ts --import-map=import_map.json
 
-EXPOSE 8000
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh
+RUN deno cache --lock=deno.lock --lock-write main.ts
 
 CMD ["task", "production"]
 
-
-#FROM lukechannings/deno
-#WORKDIR /app
-#
-#COPY . .
-#
-#RUN curl -fsSL https://deno.land/x/install/install.sh | sh
-#RUN deno cache --lock=deno.lock --lock-write main.ts
-#
-#CMD ["run", "-A", "main.ts"]
-#
-#EXPOSE 8000
+EXPOSE 8000
