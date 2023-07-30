@@ -1,5 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts"
-import { updateAndGetViews } from "../utils/views.ts"
+import { getViews } from "../utils/views.ts"
 import { loadPosts, Post } from "../utils/posts.ts"
 import { List, loadLists } from "../utils/lists.ts"
 import PostEntry from '../components/postEntry.tsx'
@@ -9,7 +9,7 @@ export const handler: Handlers<{ posts: Post[], lists: List[], views: number, th
     async GET(_req, ctx) {
         const posts = await loadPosts()
         const lists = await loadLists()
-        const views = await updateAndGetViews()
+        const views = await getViews()
 
         return ctx.render({ posts, lists, views, theme: String(ctx.state.theme) })
     }
